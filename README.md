@@ -19,7 +19,7 @@ This project demonstrates multiple CCNA networking concepts implemented in Cisco
 
 ## Topology
 
-![Topology](screenshots/topology.pn)
+![Topology](screenshots/topology.png)
 
 ## Devices
 
@@ -44,7 +44,7 @@ This project demonstrates multiple CCNA networking concepts implemented in Cisco
 
 ### OSPF Neighbor
 
-![OSPF](screenshots/ospf-neighbor.pn)
+![OSPF](screenshots/ospf-neighbor.png)
 
 ### EIGRP Neighbor
 
