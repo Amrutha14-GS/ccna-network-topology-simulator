@@ -1,55 +1,64 @@
-# CCNA Enterprise Network Topology Simulator
+# CCNA Network Topology Simulator
 
 ## Overview
 
-This project demonstrates:
+This project demonstrates multiple CCNA networking concepts implemented in Cisco Packet Tracer.
 
-- VLANs (10, 20, 30)
-- Inter-VLAN Routing (Router-on-a-Stick)
+## Features
+
+- VLAN 10, 20, 30
+- Router-on-a-Stick
+- Inter-VLAN Routing
 - OSPF Area 0
 - EIGRP AS 100
-- OSPF ↔ EIGRP Route Redistribution
-- PVST+ Root Bridge
+- OSPF-EIGRP Redistribution
+- STP PVST+
+- Loopback Interfaces
+- Route Advertisement
 - End-to-End Connectivity Testing
 
 ## Topology
 
-PC1 (VLAN10)
-PC2 (VLAN20)
-PC3 (VLAN30)
-        |
-       SW1
-        |
-       R1
-        |
-      OSPF
-        |
-       R2
-        |
-      EIGRP
-        |
-       R3
+![Topology](screenshots/topology.pn)
+
+## Devices
+
+### Router1
+- OSPF Area 0
+- NAT/PAT Ready
+- Router-on-a-Stick
+
+### Router2
+- OSPF + EIGRP
+- Redistribution
+
+### Router3
+- EIGRP AS 100
+
+### Switch1
+- VLANs 10,20,30
+- Trunk Configuration
+- PVST+
 
 ## Verification
 
 ### OSPF Neighbor
 
-show ip ospf neighbor
-
-State: FULL
+![OSPF](screenshots/ospf-neighbor.pn)
 
 ### EIGRP Neighbor
 
-show ip eigrp neighbors
+![EIGRP](screenshots/eigrp-neighbor.png)
 
-Neighbor: 10.1.23.1
+## Skills Demonstrated
 
-### Route Redistribution
+- Routing Protocols
+- VLAN Configuration
+- Switching
+- Troubleshooting
+- Cisco Packet Tracer
+- Network Design
 
-R1 learned:
+## Author
 
-O E2 3.3.3.3/32
-
-### Connectivity
-
-R1 successfully pinged 3.3.3.3
+Amrutha G S
